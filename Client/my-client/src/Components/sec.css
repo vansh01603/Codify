@@ -1,0 +1,29 @@
+body{
+  color: whitesmoke;
+}
+.sec-div{
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+    float:initial;
+    background-color: #111;
+    padding: 3px 3px;
+    gap: 10px;
+}
+.custom-btn {
+    margin: 10px;
+  background: transparent;
+  color:whitesmoke;
+  border: none;
+}
+.custom-btn:hover{
+    cursor: pointer;
+}
+.custom-btn:focus {
+  border-bottom: 2px solid rgb(244, 248, 244);
+  animation-timing-function:ease;
+}
+
+.custom-btn.active {
+  background-color: #004080;
+}

@@ -1,0 +1,66 @@
+/* Wrapper for the entire search area */
+.Aside-div {
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #111;
+}
+
+/* Wrap input and results together */
+.search-wrapper {
+  position: relative;
+  width: 250px;
+}
+
+/* Input styling */
+#inp1 {
+  color: whitesmoke;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #aaa;
+  border-radius: 25px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Remove blue glow on focus */
+#inp1:hover {
+  box-shadow: 0px 0px 2px 1px #fefafa;
+}
+
+/* Search results container */
+.search-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  /* border-radius: 25px; */
+}
+
+/* Individual search items */
+#list-n {
+  padding: 10px;
+  cursor: pointer;
+  /* border-radius: 25px; */
+  border-bottom: 1px solid #eee;
+}
+
+#list-n:last-child {
+  border-bottom: none;
+}
+
+#list-n:hover {
+  background-color: #3a3838;
+}

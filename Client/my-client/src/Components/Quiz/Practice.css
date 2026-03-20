@@ -1,0 +1,151 @@
+/* General page styling */
+/* body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  margin: 0;
+  padding: 0;
+} */
+
+/* Main container */
+.quiz-container, .language-select, .result-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #111;
+  color: whitesmoke;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Headers */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin-bottom: 15px;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  transition: width 0.3s ease;
+}
+
+/* Option buttons */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.option-btn {
+    padding: 10px;
+    color:rgb(218, 23, 23);
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+.option-btn:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+.option-btn.correct {
+  background: #4caf50;
+  color: black;
+}
+.option-btn.wrong {
+  background: #f44336;
+  color: black;
+}
+.option-btn.selected {
+  border: 2px solid #4e54c8;
+}
+
+/* Control buttons */
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.control-buttons button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #4e54c8;
+  color: black;
+  transition: background 0.3s ease;
+}
+.control-buttons button:hover {
+  background: #3b3f99;
+}
+.control-buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Result styling */
+.result-container h2 {
+  margin-bottom: 10px;
+}
+.result-container p {
+  margin: 5px 0;
+}
+.result-container button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #4e54c8;
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.result-container button:hover {
+  background: #3b3f99;
+}
+
+/* Language select */
+.language-select select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .quiz-container, .language-select, .result-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  .option-btn {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}

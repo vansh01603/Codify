@@ -1,0 +1,19 @@
+.ACC-div{
+    height: 30vh;
+    width: 100%;
+    border: 2px solid blue;
+    color: whitesmoke;
+}
+
+.accordion-button {
+  background-color: #111 !important;
+  color: whitesmoke !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #111 !important;
+  color: whitesmoke !important;
+  box-shadow: none !important;
+}
